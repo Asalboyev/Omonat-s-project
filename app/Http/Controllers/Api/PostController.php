@@ -27,13 +27,16 @@ class PostController extends Controller
         $about = About::all()->map(function($about) {
             return [
                 'id' => $about->id,
-                'satisfied_clients' => $about->satisfied_clients,
-                'photo' => $about->photo,
-                'conducted_master_classes' => $about->conducted_master_classes,
-                'cooperation_with_clinics' => $about->cooperation_with_clinics,
-                'employees' => $about->employees,
+                'phone' => $about->phone,
+                'title' => $about->title,
+                'subtitle' => $about->subtitle,
+                'apple_link' => $about->apple_link,
+                'and_link' => $about->and_link,
+                'app_link' => $about->app_link,
+                'double_description' => $about->double_description,
                 'updated_at' => $about->employees,
-                'descriptions' => json_decode($about->descriptions, true), // JSON formatidagi descriptionsni o'qish
+                'description' => json_decode($about->descriptions, true), // JSON formatidagi descriptionsni o'qish
+                'double_description' => json_decode($about->double_description, true), // JSON formatidagi descriptionsni o'qish
                 // boshqa maydonlar, agar kerak bo'lsa
             ];
         });
