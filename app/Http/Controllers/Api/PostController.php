@@ -35,7 +35,7 @@ class PostController extends Controller
                 'app_link' => $about->app_link,
                 'double_description' => $about->double_description,
                 'updated_at' => $about->employees,
-                'description' => json_decode($about->descriptions, true), // JSON formatidagi descriptionsni o'qish
+                'description' => json_decode($about->description, true), // JSON formatidagi descriptionsni o'qish
                 'double_description' => json_decode($about->double_description, true), // JSON formatidagi descriptionsni o'qish
                 // boshqa maydonlar, agar kerak bo'lsa
             ];
