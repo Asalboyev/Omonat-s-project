@@ -33,6 +33,9 @@ class PostController extends Controller
                 'apple_link' => $about->apple_link,
                 'and_link' => $about->and_link,
                 'app_link' => $about->app_link,
+                'tg_link' => $about->tg_link,
+                'insta_link' => $about->insta_link,
+                'you_link' => $about->you_link,
                 'double_description' => $about->double_description,
                 'updated_at' => $about->employees,
                 'description' => json_decode($about->description, true), // JSON formatidagi descriptionsni o'qish
