@@ -17,10 +17,14 @@ class About extends Model
         'and_link',
         'app_link',
         'double_description',
+        'tg_link',
+        'insta_link',
+        'you_link'
+
     ];
     protected $casts = [
         'title' => 'array',
         'subtitle' => 'array',
-        
+
     ];
 }

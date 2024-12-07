@@ -21,6 +21,10 @@ return new class extends Migration
             $table->string(column: 'phone')->nullable();
             $table->text('description')->nullable();
             $table->text('double_description')->nullable();
+            $table->string('insta_link')->nullable();
+            $table->string('tg_link')->nullable();
+            $table->string('you_link')->nullable();
+
 
             $table->timestamps();
         });

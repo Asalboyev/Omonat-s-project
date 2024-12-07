@@ -177,6 +177,18 @@
                             <label for="kt_ecommerce_add_category_store_template" class="form-label">Phone</label>
                             <input type="number" class="form-control mb-2" name="phone" value="{{ $information->phone}}">
                         </div>
+                        <div class="card-body pt-0">
+                            <label for="kt_ecommerce_add_category_store_template" class="form-label">Telegram link</label>
+                            <input type="url" class="form-control mb-2" name="tg_link" value="{{ $information->tg_link}}">
+                        </div>
+                        <div class="card-body pt-0">
+                            <label for="kt_ecommerce_add_category_store_template" class="form-label">Instagram link</label>
+                            <input type="url" class="form-control mb-2" name="insta_link" value="{{ $information->insta_link}}">
+                        </div>
+                        <div class="card-body pt-0">
+                            <label for="kt_ecommerce_add_category_store_template" class="form-label">Youtobe link</label>
+                            <input type="url" class="form-control mb-2" name="you_link" value="{{ $information->you_link}}">
+                        </div>
                     </div>
                 </div>
             </form>
